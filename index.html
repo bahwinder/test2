@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test JQuery</title>
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<div>
+		<h1 id="panel1">Bobin</h1>
+		<button id="btn1">press</button>
+	</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#btn1').on('click',function(){
+			$('#panel1').slideToggle(200);
+		})
+	});
+</script>
+</html>
